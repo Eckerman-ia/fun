@@ -262,8 +262,8 @@ function web_mandelbrot(env) {
         onhashchange();
 
         env.canvas().onclick = function () {
-            var x = env.mouse().getX(),
-                y = env.mouse().getY();
+            var x = 0
+                y = 0
             if ((x < view.canvas.width * 0.15) ||
                     (x > view.canvas.width * 0.85)) {
                 // Zoom out
